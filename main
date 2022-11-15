@@ -1,0 +1,28 @@
+# clone git
+	git clone git@github.com:oizehsgl/gitLearning.git
+# work flow
+	git checkout main
+	git branch develop
+	git checkout develop
+	git push --set-upstream origin develop
+	git branch feature-workflow
+	git checkout feature-workflow
+	git push --set-upstream origin feature-workflow
+	git add .
+	git commit -m "feature-workflow"
+	git push
+	git checkout develop
+	git merge --no-ff feature-workflow
+	git branch release-workflow
+	git checkout release-workflow
+	git push --set-upstream origin feature-workflow
+	git add .
+	git commit -m "release-workflow"
+	git push
+	git checkout main
+	git merge --no-ff release-workflow
+	git tag -a release-workflow -m "workflow"
+	git push
+	git checkout develop
+	git merge --no-ff release-workflow
+
