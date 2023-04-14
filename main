@@ -1,7 +1,7 @@
 # clone
 git clone git@github.com:oizehsgl/gitLearning.git;
 # look
-git remote;git branch;git status; #git log --all --online --graph -15 --reflog;
+git remote;git branch;git status;git ls-remote; #git log --all --online --graph -15 --reflog;
 # main
 git checkout main;
 # develop
