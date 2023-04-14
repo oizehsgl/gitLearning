@@ -1,1 +1,11 @@
 (Git工作流)：Gitflow Workflow 是一种复杂的工作流程，基于 Feature Branch Workflow，并增加了发布分支和修复分支。该工作流适用于需要频繁发布版本和修复错误的项目。
+
+main
+
+(hotfix)
+
+(release)
+
+develop
+
+feature-1 feature-2 feature-3
